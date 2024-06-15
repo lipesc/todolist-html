@@ -1,0 +1,103 @@
+.conteiner {
+	width: 100%;
+	margin: 0 auto;
+	color: black;
+	text-align: center;
+	
+}
+
+@media (max-width: 600px) {
+.conteiner {
+	width: 100%;
+	text-align: center;
+			}
+}
+
+
+html, body {
+  
+	background-color: gray;
+	text-align: center;
+		
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+  
+  display: flex;
+  flex-direction: column;
+
+}
+button {
+	margin-left: 5px;
+	padding: 5px;
+	border-radius: 50px;
+	font-size: 0.8em;
+	text-align: center;
+	
+}
+
+ul 	{
+	font-family: Arial, sans-serif; 
+	color: purple; 
+	font-size: 20px;
+	text-align: center;
+	display: inline;
+	padding: 10px;
+}
+
+main {
+  
+}
+
+p {
+  text-align: center;
+  text-wrap: balance;
+}
+section > h4 {
+	text-align: center;
+	font-family: Arial, sans-serif; 
+	padding: 5px;
+	
+	
+ }
+#logo {
+	background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+	padding: 1px;
+
+}
+
+footer  > section {
+  display: inline-block;
+  text-align: center;
+   border-radius: 1rem;
+	text-align: center;
+}
+
+h1 {
+	font-family: Arial, sans-serif; 
+	color: black;
+	text-align: center;
+		
+}
+@media (min-width: 27rem) {
+	main {
+    margin: auto;
+  }
+}
+
+main {
+    border-radius: 3rem;
+    max-width: 31rem;
+    padding: 2rem;
+  }
+

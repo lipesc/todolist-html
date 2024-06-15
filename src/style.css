@@ -1,103 +1,128 @@
 .conteiner {
-	width: 100%;
-	margin: 0 auto;
-	color: black;
-	text-align: center;
-	
+  width: 80%;
+  color: black;
+  text-align: center;
+	margin: 25px; padding: 25px; border: 1px
+
 }
 
 @media (max-width: 600px) {
-.conteiner {
-	width: 100%;
-	text-align: center;
-			}
+  .conteiner {
+    width: 100%;
+    text-align: center;
+		margin: 25px; padding: 25px; border: 1px
+		
+  }
 }
 
-
 html, body {
-  
-	background-color: gray;
-	text-align: center;
-		
+  background-color: gray;
+  text-align: center;
+  text-size-adjust: 100%;
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+	display: flow;
+  flex-direction: column;
+	margin: 25px; padding: 25px; 
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
-}
-body {
-  
-  display: flex;
-  flex-direction: column;
-
-}
-button {
-	margin-left: 5px;
-	padding: 5px;
-	border-radius: 50px;
-	font-size: 0.8em;
-	text-align: center;
+  box-sizing: inherit;
 	
-}
-
-ul 	{
-	font-family: Arial, sans-serif; 
-	color: purple; 
-	font-size: 20px;
-	text-align: center;
-	display: inline;
-	padding: 10px;
 }
 
 main {
-  
+  background-color: rgb(143, 143, 143);
+  border-radius: 20px;
+	margin: 25px; padding: 25px;
+
 }
 
-p {
+/* Estabelece a margem do botão a 251rem do lado esquerdo */
+
+ul, li {
+	
+  display: flow;
+  font-family: monospace;
+  color: black;
+  font-size: 1rem;
   text-align: center;
-  text-wrap: balance;
+  background-color: #b6b6b6; 
+	margin: 10px; padding: 10px; 
+
+}
+li > button, li > input {
+	border-radius: 10px;
+	text-align: center;
+	
+	font-family: monospace;
+	color: black;
+	font-size: 1rem;
+	margin: 5px; padding:  10px; border: 1px solid #7c1d00;
+
+}
+input, button {
+
+	cursor: text;
+	background-color: #dddddd;
+	font-style: italic;
+	border-radius: 10px;
+	text-align: center;
+	font-family: monospace;
+	color: black;
+	font-size: 1rem;
+	margin: 5px; padding:  5px; border: 1px solid #7c1d00;
+}
+#minhaLista > li  {
+	cursor: pointer;
+	font-family: monospace;
+	color: green;
+	font-size: 2rem;
+	margin: 5px; padding:  10px; border: 1px solid #7c1d00;
+}
+section > h4, p, a{
+	display: inline-block;
+	text-align: center;
+	border-radius: 1rem;
+	text-align: center;
+	margin: 10px; padding: 5px; border: 1px;
 }
 section > h4 {
-	text-align: center;
-	font-family: Arial, sans-serif; 
-	padding: 5px;
 	
-	
- }
-#logo {
-	background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-	padding: 1px;
-
-}
-
-footer  > section {
-  display: inline-block;
   text-align: center;
-   border-radius: 1rem;
-	text-align: center;
+  font-family: Arial, sans-serif;
+ margin: 10px; padding: 5px; border: 1px
 }
 
 h1 {
-	font-family: Arial, sans-serif; 
-	color: black;
-	text-align: center;
-		
+  font-family: Arial, sans-serif;
+  color: black;
+  text-align: center;
+	margin: 10px; padding: 5px; border: 1px
 }
-@media (min-width: 27rem) {
-	main {
-    margin: auto;
+@media (min-width: 600px) {
+  main {
+    padding: auto;
+	margin: auto;
   }
 }
 
-main {
-    border-radius: 3rem;
-    max-width: 31rem;
-    padding: 2rem;
-  }
 
+#logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  text-align: center;
+  width: 20px;
+  height: 20px;
+	margin: 10px; padding: 5px; border: 1px
+}
+footer > section > p {
+  display: block;
+  text-align: center;
+  border-radius: 1rem;
+  text-align: center;
+	margin: 10px; padding: 5px; border: 1px
+}

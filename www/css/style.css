@@ -1,0 +1,146 @@
+/* GENERAL STYLES */
+html,
+body {
+  background-color: gray;
+  text-align: center;
+  text-size-adjust: 100%;
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flow;
+  flex-direction: column;
+  margin: 25px;
+  padding: 25px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  background-color: rgb(143, 143, 143);
+  border-radius: 20px;
+  margin: 25px;
+  padding: 25px;
+}
+
+/* CONTENT STYLES */
+.todo-list-container {
+  color: black;
+  margin: 25px auto; /* Center horizontally */
+  padding: 25px;
+  border: 1px;
+  /* Use percentages for widths to make it responsive */
+  width: 90%; /* Adjust as needed */
+}
+.list-item.editing {
+  display: flex; /* Arrange text input and edit button inline */
+  align-items: center; 
+}
+
+.list-item.editing input {
+  width: 80%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.list-item.editing .edit-button {
+  display: none;
+}
+
+.list-item.editing .save-button {
+  display: inline-block;
+}
+/* LIST ITEMS */
+.list-item {
+  cursor: pointer;
+  font-family: monospace;
+  color: green;
+  font-size: 1rem;
+ 
+}
+
+/* INPUT AND BUTTON CONTAINER */
+.input-button-container {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+	margin: auto;
+}
+
+/* INPUT AND BUTTON STYLES */
+.input-button-container input,
+.input-button-container button {
+  border-radius: 10px;
+  text-align: center;
+  font-family: monospace;
+  color: black;
+  font-size: 1rem;
+  padding: auto;
+	margin: auto;
+  border: 1px solid #7c1d00;
+  background-color: #dddddd;
+  font-style: italic;
+  cursor: text; /* Added cursor style */
+}
+#minhaLista > li {
+  display: block;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(243, 243, 243, 0.6);
+  background: rgba(231, 231, 231, 0.3);
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/* BUTTONS */
+#button {
+  display: block;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 200, 0.6);
+  background: rgba(0, 0, 200, 0.3);
+  color: rgba(0, 0, 200, 0.6);
+  box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* MEDIA QUERIES (RESPONSIVE DESIGN) */
+@media (max-width: 600px) {
+  /* Adjust font sizes for smaller screens */
+  .todo-list-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .list-item {
+    font-size: 1.5rem;
+  }
+
+  .input-button-container input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: auto;
+	margin: auto;
+  }
+
+  .input-button-container button {
+    width: auto;
+  }
+}
+
+/* FOOTER STYLES */
+/* ... your existing footer styles ... */
